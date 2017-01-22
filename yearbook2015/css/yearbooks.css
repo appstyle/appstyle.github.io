@@ -1,0 +1,166 @@
+@charset "utf-8";
+/** 初始化 **/
+fieldset,a img{border:none;}
+a{text-decoration:none;}
+ul,ol{padding:0;list-style-type:none;}
+body,dl,dd,ul,ol,h1,h2,h3,h4,form,p{margin:0;}
+h1,h2,h3,h4{font-size:100%;font-weight:normal;}
+address,caption,cite,code,dfn,em,th,var,i{font-style:normal;font-weight:normal;}
+input,
+textarea,
+a,
+button { outline: none; }
+a:hover { text-decoration: underline; }
+a:focus { outline-style: none; }
+html,
+body { height: 100%;overflow: hidden; }
+html { font-size: 16px; }
+body { font: 0.75rem/1.3 'Arial', 'Microsoft YaHei'; _font-family: simsun; color: #333; background: #fff; -webkit-user-select: none; -moz-user-select: none; user-select: none;position: absolute; top: 0; left: 0; right: 0; bottom: 0;  }
+/** 公用 **/
+.clearfix:after { content: "";display: table;clear: both;}
+.clearfix {*zoom:1; }
+.fl { float: left; }
+.fr { float: right; }
+
+/** 大图轮播 **/
+.nj_mod { position: absolute; top: 6.125rem; right: 0; bottom: 0; left: 0; }
+.scence_wrap { max-width: 100%;width: 87.5rem; height: 100%; margin: 0 auto; overflow: hidden; }
+.nj_pic { position: relative; width: 100%; height: 100%; max-height: 45.625rem; overflow: hidden; }
+.nj_pic .pic_list { height: 100%; }
+.nj_pic .pic_list li { display: none; height: 100%; }
+.nj_pic .pic_list li:first-child { display: block; }
+.nj_pic img { position: absolute; width: 87.5rem; left: 50%; top: 0; -webkit-transform: translate(-50%, 0); -moz-transform: translate(-50%, 0); transform: translate(-50%, 0); }
+.nj_pic .number_list { position: absolute; width: 100%; bottom: 2.3125rem; text-align: center; z-index: 100; }
+.nj_pic .number_list li { display: inline-block; width: 0.75rem; height: 0.75rem; border-radius: 0.75rem; margin: 0 0.4375rem; background: #ccc; cursor: pointer; }
+.nj_pic .number_list li.on { background: #f7941e; }
+.prev_btn,
+.next_btn { position: absolute; top: 50%; z-index: 100; width: 2rem; height: 3.625rem; background: url(../images/icon.png) 0 0 no-repeat; background-size: 4rem 21.438rem; cursor: pointer; -webkit-transform: translate(0, -50%); -moz-transform: translate(0, -50%); transform: translate(0, -50%); display: none; }
+.prev_btn { left: 7.5rem; background-position: 0 -6.4375rem; }
+.next_btn { right: 7.5rem; background-position: 0 -10.0625rem; }
+.prev_btn:hover { background-position: 0 -13.6875rem; }
+.next_btn:hover { background-position: 0 -17.3125rem; }
+.nj_pic:hover .prev_btn,
+.nj_pic:hover .next_btn { display: block; }
+/** 滚屏icon **/
+.nj_page_list { position: fixed; top: 50%; right: 1.75rem; transform: translateY(-50%); }
+.nj_page_list li { width: 0.75rem; height: 0.75rem; border-radius: 0.75rem; margin-top: 0.9375rem; background: #ccc; cursor: pointer; }
+.nj_page_list li.on { background: #f7941e; }
+/** 返回顶部 **/
+.nj_up { display: none; position: fixed; top: 39.375rem; right: 9.375rem; z-index: 10; width: 3.1875rem; height: 3.1875rem; background: url(../images/icon.png) 0 0 no-repeat; cursor: pointer; background-size: 12.5rem 31.25rem; }
+.nj_up.on { background-position: 0 -3.1875rem; }
+/** 动效样式 **/
+.nj_pic .pic_list img { display: block; }
+.nj_pic .pic_list span { position: absolute; }
+/** 商业组 **/
+.nj_pic .pic_list .sy_font_01 { width: 31.125rem; height: 5.625rem; top: 2.75rem; left: 24.5625rem; z-index: 30; background: url('../images/商业01-font.png') 0 0 no-repeat; background-size: 31.125rem 5.5625rem; }
+.nj_pic .pic_list .sy_left_01 { width: 57.3125rem; height: 29.25rem; bottom: 0; left: 3.3125rem; z-index: 10; background: url('../images/商业01-L1.png') 0 0 no-repeat; background-size: 57.3125rem 29.25rem; }
+.nj_pic .pic_list .sy_right_01 { width: 27.125rem; height: 33.1875rem; bottom: 0; left: 55.0rem; background: url('../images/商业01-R2.png') 0 0 no-repeat; background-size: 27.125rem 33.1875rem; }
+.nj_pic .pic_list .sy_font_02 { width: 37.125rem; height: 5.625rem; top: 2.75rem; left: 24.5625rem; z-index: 30; background: url('../images/商业02-font.png') 0 0 no-repeat; background-size: 37.125rem 5.5625rem; }
+.nj_pic .pic_list .sy_left_02 { width: 32.8125rem; height: 29.0625rem; bottom: 4.0625rem; left: 42.6875rem; z-index: 10; background: url('../images/商业02-L1.png') 0 0 no-repeat; background-size: 32.8125rem 29.0625rem; }
+.nj_pic .pic_list .sy_right_02 { width: 38.75rem; height: 24.25rem; bottom: 5rem; left: 12.5rem; background: url('../images/商业02-R2.png') 0 0 no-repeat; background-size: 38.75rem 24.25rem; }
+.nj_pic .pic_list .sy_font_03 { width: 37.5625rem; height: 6.125rem; top: 2.75rem; left: 29.4375rem; z-index: 30; background: url('../images/商业03-font.png') 0 0 no-repeat; background-size: 37.5625rem 6.125rem; }
+.nj_pic .pic_list .sy_left_03 { width: 41.3125rem; height: 39.375rem; bottom: 1.75rem; left: 0; z-index: 10; background: url('../images/商业03-L1.png') 0 0 no-repeat; background-size: 41.3125rem 39.375rem; }
+.nj_pic .pic_list .sy_right_03 { width: 62.5rem; height: 38.1875rem; bottom: 0; left: 20.375rem; background: url('../images/商业03-R2.png') 0 0 no-repeat; background-size: 62.5rem 38.1875rem; }
+.nj_pic .pic_list .sy_font_04 { width: 37.5625rem; height: 5.5625rem; top: 2.8125rem; left: 24.5625rem; z-index: 30; background: url('../images/商业04-font.png') 0 0 no-repeat; background-size: 37.5625rem 5.5625rem; }
+.nj_pic .pic_list .sy_left_04 { width: 62.3125rem; height: 29.8125rem; bottom: 0; left: 12.5rem; z-index: 10; background: url('../images/商业04-L1.png') 0 0 no-repeat; background-size: 62.3125rem 29.8125rem; }
+.nj_pic .pic_list .sy_right_04 { width: 58.4375rem; height: 35.125rem; bottom: 0.9375rem; left: 14.5rem; background: url('../images/商业04-R2.png') 0 0 no-repeat; background-size: 58.4375rem 35.125rem; }
+/** 运营组 **/
+.nj_pic .pic_list .yy_left_01,
+.nj_pic .pic_list .yy_left_01_02,
+.nj_pic .pic_list .yy_right_01 { width: 8.6875rem; height: 8.6875rem; }
+.nj_pic .pic_list .yy_left_01 { top: 11.375rem; left: 39.25rem; background: url('../images/运营01-L1.png') 0 0 no-repeat; background-size: 8.6875rem 8.6875rem; }
+.nj_pic .pic_list .yy_left_01_02 { top: 26.5rem; left: 30.4375rem; background: url('../images/运营01-L2.png') 0 0 no-repeat; background-size: 8.6875rem 8.6875rem; }
+.nj_pic .pic_list .yy_right_01 { top: 26.5rem; left: 48.375rem; background: url('../images/运营01-R1.png') 0 0 no-repeat; background-size: 8.6875rem 8.6875rem; }
+.nj_pic .pic_list .yy_font_02 { width: 38.3125rem; height: 6.9375rem; top: 2.75rem; left: 24.5625rem; z-index: 30; background: url('../images/运营02-font.png') 0 0 no-repeat; background-size: 38.3125rem 6.9375rem; }
+.nj_pic .pic_list .yy_left_02 { width: 40.5rem; height: 30.625rem; bottom: 4.375rem; left: 22.625rem; z-index: 10; background: url('../images/运营02-L1.png') 0 0 no-repeat; background-size: 40.5rem 30.625rem; }
+.nj_pic .pic_list .yy_left_02_02 { width: 9.875rem; height: 18.625rem; bottom: 10.125rem; left: 17.0rem; background: url('../images/运营02-L2.png') 0 0 no-repeat; background-size: 9.875rem 18.625rem; }
+.nj_pic .pic_list .yy_right_02 { width: 12.813rem; height: 24.625rem; bottom: 0.3125rem; left: 59.125rem; background: url('../images/运营02-R1.png') 0 0 no-repeat; background-size: 12.813rem 24.625rem; }
+
+.nj_pic .pic_list .yy_03_bg{ background: url('../images/yunying2_bg2.jpg') 0 0 repeat-x; background-size: 87.5rem 45.625rem; }
+.nj_pic .pic_list .yy_font_03 { width: 38.25rem; height:6.9375rem; top: 2.8125rem; left: 24.625rem; z-index: 30; background: url('../images/yunying2_slogan2_1.png') 0 0 no-repeat; background-size: 38.25rem 6.9375rem; }
+.nj_pic .pic_list .yy_left_03_01 { width: 23.25rem; height: 28.375rem; bottom: 1.8rem; left: 15.0rem; z-index: 10; background: url('../images/yunying2_img2_1.png') 0 0 no-repeat; background-size: 23.75rem 28.375rem; }
+.nj_pic .pic_list .yy_left_03_02 { width: 34.4375rem; height: 35.875rem; bottom: 0; left: 28.75rem; z-index: 20; background: url('../images/yunying2_img2_2.png') 0 0 no-repeat; background-size: 34.4375rem 35.875rem; }
+.nj_pic .pic_list .yy_left_03_03 { width: 19.0rem; height: 27.75rem; bottom: 1.8rem; left: 57.5rem; background: url('../images/yunying2_img2_3.png') 0 0 no-repeat; background-size: 19rem 27.75rem; }
+
+.nj_pic .pic_list .yy_font_04 { width: 38.25rem; height: 6.9375rem; top: 2.875rem; left: 24.5625rem; z-index: 30; background: url('../images/运营04-font.png') 0 0 no-repeat; background-size: 38.25rem 6.9375rem; }
+.nj_pic .pic_list .yy_left_04 { width: 36.1875rem; height: 20.5625rem; bottom: 12.0625rem; left: 26.5625rem; z-index: 10; background: url('../images/运营04-L1.png') 0 0 no-repeat; background-size: 36.1875rem 20.5625rem; }
+.nj_pic .pic_list .yy_font_05 { width: 38.1875rem; height: 6.9375rem; top: 2.6875rem; left: 24.625rem; z-index: 30; background: url('../images/运营05-font.png') 0 0 no-repeat; background-size: 38.1875rem 6.9375rem; }
+.nj_pic .pic_list .yy_right_05 { width: 29.1875rem; height: 34.0625rem; bottom: 0; left: 43.75rem; z-index: 10; background: url('../images/运营05-R1.png') 0 0 no-repeat; background-size: 29.1875rem 34.0625rem; }
+.nj_pic .pic_list .yy_left_06 { width: 27.9375rem; height: 37.3125rem; top: 12.813rem; left: 30.25rem; z-index: 10; background: url('../images/运营06-L1.png') 0 0 no-repeat; background-size: 27.9375rem 37.3125rem; }
+.nj_pic .pic_list .yy_left_06_02 { width: 23.625rem; height: 29.25rem; top: 16.25rem; left: 16.25rem; background: url('../images/运营06-L2.png') 0 0 no-repeat; background-size: 23.625rem 29.25rem; }
+.nj_pic .pic_list .yy_right_06 { width: 23.625rem; height: 29.0625rem; top: 16.25rem; left: 46.875rem; background: url('../images/运营06-R1.png') 0 0 no-repeat; background-size: 23.625rem 29.0625rem; }
+.cloud1,
+.cloud2,
+.cloud3,
+.grass { position: absolute; }
+.cloud1 { left: 8.4375rem; top: 25.375rem; width: 14.375rem; height: 13.813rem; background: url("../images/cloud_two.png") no-repeat; background-size: 14.375rem 13.813rem; }
+.cloud2 { left: 14.375rem; top: 12.625rem; width: 8.375rem; height: 5.5rem; background: url("../images/cloud_one.png") no-repeat; background-size: 8.375rem 5.5rem; }
+.cloud3 { right: 8.625rem; top: 26.75rem; width: 10.0625rem; height: 9.1875rem; background: url("../images/cloud_three.png") no-repeat; background-size: 10.0625rem 9.1875rem; }
+.grass { top: 19.5625rem; left: 42.9375rem; width: 2.1875rem; height: 1.8125rem; background: url("../images/grass.png") no-repeat; background-size: 2.1875rem 1.8125rem; }
+.nj_pic .pic_list .yy_font_08 { width: 38.25rem; height: 6.9375rem; top: 2.8125rem; left: 24.5625rem; z-index: 30; background: url('../images/运营08-font.png') 0 0 no-repeat; background-size: 38.25rem 6.9375rem; }
+.nj_pic .pic_list .yy_left_08 { width: 27.625rem; height: 22.875rem; bottom: 7.125rem; left: 29.75rem; z-index: 10; background: url('../images/运营08-L1.png') 0 0 no-repeat; background-size: 27.625rem 22.875rem; }
+.nj_pic .pic_list .yy_left_08_02,
+.nj_pic .pic_list .yy_right_08 { width: 23.125rem; height: 29.8125rem; bottom: 3.625rem; left: 12.5rem; }
+.nj_pic .pic_list .yy_left_08_02 { background: url('../images/运营08-L2.png') 0 0 no-repeat; background-size: 23.125rem 29.8125rem; }
+.nj_pic .pic_list .yy_right_08 { left: 53.3125rem; background: url('../images/运营08-R1.png') 0 0 no-repeat; background-size: 23.125rem 29.8125rem; }
+/* 手机微博 */
+.nj_pic .pic_list .sj1_slogan{ position: absolute; width: 38.8125rem; height: 5.5625rem; left: 50%; top: 2.625rem; margin: 0 0 0 -19.4rem; }
+.nj_pic .pic_list .sj1_left { position: absolute; width: 32.875rem; height: 8.625rem; top: 50%; left: 50%; margin: -4.3125rem 0 0 -25.625rem; background: url('../images/mobie1_left.png') 0 0 no-repeat; z-index: 10; background-size: 32.875rem 8.625rem; }
+.nj_pic .pic_list .sj1_right { position: absolute; width: 24.4375rem; height: 36.4375rem; top: 50%; left: 50%; margin: -18rem 0 0 8rem; background: url('../images/mobie1_right.png') 0 0 no-repeat; z-index: 10; background-size: 24.4375rem 36.4375rem; }
+.nj_pic .pic_list .sj2_video,
+.nj_pic .pic_list .video_img { position: absolute; width: 34.75rem; height: 26.0625rem; left: 50%; top: 24rem; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.nj_pic .pic_list .sj3_md1 { position: absolute; width: 12.6875rem; height: 21.4375rem; top: 11.25rem; left: 50%; margin-left: -16.875rem; background: url('../images/mobie3_md1.png') 0 0 no-repeat; z-index: 10; background-size: 12.6875rem 21.4375rem; }
+.nj_pic .pic_list .sj3_md2 { position: absolute; width: 12.875rem; height: 21.4375rem; top: 11.25rem; left: 50%; margin-left: -5.0625rem; background: url('../images/mobie3_md2.png') 0 0 no-repeat; z-index: 10; background-size: 12.875rem 21.4375rem; }
+.nj_pic .pic_list .sj3_md3 { position: absolute; width: 12.875rem; height: 21.4375rem; top: 11.25rem; left: 50%; margin-left: 6.625rem; background: url('../images/mobie3_md3.png') 0 0 no-repeat; z-index: 10; background-size: 12.875rem 21.4375rem; }
+.nj_pic .pic_list .sj3_bottom { position: absolute; width: 56.625rem; height: 11.375rem; bottom: 5.625rem; left: 50%; margin-left: -28.3125rem; background: url('../images/mobie3_bottom.png') 0 0 no-repeat; z-index: 9; background-size: 56.625rem 11.375rem; }
+/** 主站组 **/
+.nj_pic .pic_list .zz_top_01 { width: 78.5rem; height: 37.3125rem; bottom: 0; left: 6.5rem; background: url('../images/主站01-T1.png') 0 0 no-repeat; background-size: 78.5rem 37.3125rem; }
+.nj_pic .pic_list .zz_top_text{background-color: #f00;width: 38.4375rem;height: 5.75rem;left: 50%;margin-left: -19.2rem;top:2.625rem;visibility: hidden;}
+.nj_pic .pic_list .zz_top_02 { width: 48.125rem; height: 32.8125rem;max-height: 70%; bottom:0; left: 20.625rem; z-index: 10; background: url('../images/主站01-T2.png') 0 0 no-repeat; background-size: 48.125rem 32.8125rem; }
+.nj_pic .pic_list .zz_right_01 { width: 59.25rem; height: 45.625rem; bottom: 0; right: 0; z-index: 10; background: url('../images/主站02-R1.png') 0 0 no-repeat; background-size: 59.25rem 45.625rem; }
+.nj_pic .pic_list .zz_font_01 { width: 38.3125rem; height: 5.5625rem; top: 2.8125rem; left: 24.625rem; z-index: 20; background: url('../images/主站02-font1.png') 0 0 no-repeat; background-size: 38.3125rem 5.5625rem; }
+.nj_pic .pic_list .zz_font_02 { width: 27.4375rem; height: 30.25rem; top: 12.375rem; right: 14.5625rem; z-index: 20; background: url('../images/主站02-font2.png') 0 0 no-repeat; background-size: 27.4375rem 30.25rem; }
+.nj_pic .pic_list .zz_bg_01 { width: 87.5rem; height: 45.625rem; top: 0; left: 0; z-index: 30; background: url('../images/主站02-bg1.png') 0 0 no-repeat; background-size: 87.5rem 45.625rem }
+.nj_pic .pic_list .zz_middle_01 { width:61.3125rem; height: 29.625rem;bottom: 0; right: 0; background: url('../images/主站03-M1.png') 0 0 no-repeat; background-size: 61.3125rem 29.625rem; }
+.nj_pic .pic_list .li_bg { background: url('../images/主站04.jpg') 0 0 repeat-x; }
+.nj_pic .pic_list .zz_left_01 { width: 63.0rem; height: 32.0625rem; bottom: 0; left: 0; background: url('../images/主站04-L1.png') 0 0 no-repeat; background-size: 63.0rem 32.0625rem; }
+.nj_pic .pic_list .zz_right_02 { width: 32.4375rem; height: 30.9375rem; top: 0; left: 42.25rem; background: url('../images/主站04-R1.png') 0 0 no-repeat; background-size: 32.4375rem 30.9375rem; }
+.nj_pic .pic_list .zz_right_03 { width: 28.6875rem; height: 29.0625rem; bottom: 0; right: 0; background: url('../images/主站04-R2.png') 0 0 no-repeat; background-size: 28.6875rem 29.0625rem; }
+.nj_pic .pic_list .zz_font_03 { width: 37.5rem; height: 5.4375rem; top: 5.125rem; left: 24.625rem; z-index: 10; background: url('../images/主站04-font.png') 0 0 no-repeat; background-size: 37.5rem 5.4375rem; }
+.upv6{background: #0f1621;}
+.upv6 .upv6_slogan{width: 38.3125rem;height: 5.5625rem;margin-left: -19.2rem;background: url(../images/upv6_slogan.png) 0 0 no-repeat;background-size: 38.3125rem 5.5625rem;position: absolute;top: 2.5rem;left: 50%;z-index: 10;}
+.upv6 .upv6_ball{width: 97.9375rem;height: 54.4375rem;background: url(../images/upv6_ball.png) 0 0 no-repeat;background-size: 97.9375rem 54.4375rem;position: absolute;top:50%;left: 50%;margin: -20rem 0 0 -67rem;}
+.upv6 .upv6_phone{width: 16.125rem;height: 33.8125rem;background: url(../images/upv6_phone.png) 0 0 no-repeat;background-size: 16.125rem 33.8125rem;position: absolute;top:50%;left: 50%;margin: -15rem 0 0 9rem;}
+/**平台组 **/
+.nj_pic .pic_list .pt_left_01{width:30.6875rem;height:9.875rem;top:12.1875rem;left:25rem;background:url('../images/平台01-L1.png') 0 0 no-repeat;background-size:30.6875rem 9.875rem;}
+.nj_pic .pic_list .pt_ship_01{width:8rem;height:5.375rem;top:35.375rem;left:8rem;background:url('../images/平台01-ship1.png') 0 0 no-repeat;background-size:8rem 5.375rem;}
+.nj_pic .pic_list .pt_ship_02{width:13rem;height:6.875rem;top:33.625rem;left:18.0625rem;background:url('../images/平台01-ship2.png') 0 0 no-repeat;background-size:13rem 6.875rem;}
+.nj_pic .pic_list .pt_ship_03{width:8.125rem;height:4.375rem;top:35.6875rem;left:36.875rem;background:url('../images/平台01-ship3.png') 0 0 no-repeat;background-size:8.125rem 4.375rem;}
+.nj_pic .pic_list .pt_ship_04{width:12.0625rem;height:5.4375rem;top:34.875rem;left:47.125rem;background:url('../images/平台01-ship4.png') 0 0 no-repeat;background-size:12.0625rem 5.4375rem;}
+
+.nj_pic .pic_list .pt_font{width:45.0625rem;height:6.9375rem;top:2.8125rem;left:24.625rem;z-index:50;background:url('../images/平台02-font.png') 0 0 no-repeat;background-size:45.0625rem 6.9375rem;}
+.nj_pic .pic_list .pt_left_02{width:17.75rem;height:23.25rem;top:21.625rem;left:2.375rem;z-index:30;background:url('../images/平台02-L1.png') 0 0 no-repeat;background-size:17.75rem 23.25rem;}
+.nj_pic .pic_list .pt_left_03{width:15.3125rem;height:21.625rem;top:17.125rem;left:10.125rem;z-index:20;background:url('../images/平台02-L2.png') 0 0 no-repeat;background-size:15.3125rem 21.625rem;}
+.nj_pic .pic_list .pt_left_04{width:12.875rem;height:18.3125rem;top:16.875rem;left:18.8125rem;z-index:10;background:url('../images/平台02-L3.png') 0 0 no-repeat;background-size:12.375rem 18.4375rem;}
+.nj_pic .pic_list .pt_left_05{width:23.8125rem;height:14.75rem;top:29.75rem;left:23.25rem;z-index:40;background:url('../images/平台02-L4.png') 0 0 no-repeat;background-size:23.8125rem 14.75rem;}
+.nj_pic .pic_list .pt_right_01{width:54.0625rem;height:37.8125rem;top:6.5rem;left:26.3125rem;z-index:0;background:url('../images/平台02-R1.png') 0 0 no-repeat;background-size:54.0625rem 37.8125rem;}
+/**品牌组**/
+.nj_pic .pic_list .vadio_bd {top:32.0625rem;left:26.24rem;z-index:30;}
+.nj_pic .pic_list .vadio_bd a,
+.nj_pic .pic_list .vadio_bd a img{width:14.375rem;height:8.625rem;}
+.nj_pic .pic_list .vadio_bd a {float:left;margin-right:2.875rem;}
+.nj_pic .pic_list .vadio_bd a img{position:static;}
+.nj_pic .pic_list .vadio_bd .img {cursor:default;}
+
+.nj_pic .pic_list .pp_font_03{width:38.3125rem;height:5.5625rem;top:2rem;left:24.55rem;z-index:30;background:url('../images/品牌03-font.png') 0 0 no-repeat;background-size:38.3125rem 5.5625rem;}
+.nj_pic .pic_list .pp_title_03{width:26.25rem;height:9.375rem;top:20.75rem;left:30.625rem;z-index:30;background:url('../images/品牌_ani_tit.png') 0 0 no-repeat;background-size:26.25rem 9.375rem;}
+.nj_pic .pic_list .ani_ball{position:absolute;width:63.75rem;height:63.75rem;left:11.875rem;top:5.75rem;background:url('../images/品牌_ani_ball.png') no-repeat;background-size:63.75rem 63.75rem;}
+.nj_pic .pic_list .pp_bottom{position:absolute;width:87.5rem;height:7.875rem;left:0;bottom:0;z-index:20;background:url('../images/品牌bottom.jpg') no-repeat;background-size:87.5rem 7.875rem;}
+
+/* 页面构建 */
+.scence_css .txt { position: absolute; width: 68rem; font-size: 3rem; top: 40%; left: 10%; -webkit-transform: translate(-10%, -40%); transform: translate(-10%, -40%); color: transparent; color: #fff\0; text-align: center; font-family: "Microsoft yahei"; opacity: 0 }
+.scence_css .txt .num { font-size: 5rem }
+
+@media (min-device-width:375px) and (max-device-width:667px) {
+	
+}

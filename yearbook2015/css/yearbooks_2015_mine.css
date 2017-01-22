@@ -1,0 +1,222 @@
+@charset "utf-8";
+/** 初始化 **/
+
+/*add*/
+.page_bg{position: absolute;width: 100%;height: 100%;background-size: cover;}
+.screen_center{width: 1200px;height: 640px;/*border:1px solid #000;*/position: absolute;top: 50%;left:50%;-webkit-transform:translate3d(-50%,-50%,0);}
+.screen_center div{position: absolute;}
+/*edit By Young*/
+/*.screen_center div{opacity: 0;}
+*//*.huati_box .card{width:914px;height:570px;left:379px;top:117px;background: url(../images/huati/card.png) no-repeat;opacity: 0;}
+.huati_box .huati_txt{width:308px;height:271px;left:-75px;top:123px;background: url(../images/huati/txt.png) no-repeat;}
+.huati_box .pop1{width:93px;height:106px;left:422px;top:41px;background: url(../images/huati/pop.png) no-repeat;}
+.huati_box .pop2{width:73px;height:78px;left:614px;top:139px;background: url(../images/huati/pop.png) no-repeat;background-size: auto 100%}
+.huati_box .normal{width:338px;height:412px;left:498px;top:309px;background: url(../images/huati/normal.png) no-repeat;}
+.huati_box .fangtan{width:339px;height:406px;left:879px;top:69px;background: url(../images/huati/fangtan.png) no-repeat;}
+.huati_box .imgteml{width:337px;height:405px;left:628px;top:-69px;background: url(../images/huati/imgteml.png) no-repeat;}*/
+/*动效*/
+
+/*huati*/
+.huati{background: #85b9fc;}
+.huati_box .huati_bg{margin:-170px 0 0 -350px;width:1920px;height:1080px;background: url(../images/huati/huati_bg.png) no-repeat;}
+.huati_box .card{width:914px;height:570px;left:329px;top:117px;background: url(../images/huati/card.png) no-repeat;opacity: 0;}
+.huati_box .huati_txt{width:292px;height:248px;left:5px;top:123px;background: url(../images/huati/txt.png) no-repeat;}
+.huati_box .pop1{width:93px;height:106px;left:422px;top:41px;background: url(../images/huati/pop.png) no-repeat;}
+.huati_box .pop2{width:73px;height:78px;left:614px;top:139px;background: url(../images/huati/pop.png) no-repeat;background-size: auto 100%}
+.huati_box .normal{width:338px;height:412px;left:542px;top:278px;background: url(../images/huati/normal.png) no-repeat;}
+.huati_box .fangtan{width:339px;height:406px;left:835px;top:98px;background: url(../images/huati/fangtan.png) no-repeat;}
+.huati_box .imgteml{width:337px;height:405px;left:584px;top:-40px;background: url(../images/huati/imgteml.png) no-repeat;}
+.scence_shouji .huati_box .huati_bg{animation:fadeInRight .5s ease .1s forwards;opacity: 0;}
+.scence_shouji .huati_box .card{animation:fadeInRight .5s ease .6s forwards;opacity: 0;}
+.scence_shouji .huati_box .huati_txt{animation:fadeInLeft .5s ease .6s forwards;opacity: 0;}
+.scence_shouji .huati_box .pop1{animation:fadeInTop 1s ease .8s forwards 1,pop 1s ease 1.8s infinite alternate;opacity: 0;}
+.scence_shouji .huati_box .pop2{animation:fadeInTop .5s ease .8s forwards 1,pop 1s ease 1.3s infinite alternate;opacity: 0;}
+.scence_shouji .huati_box .normal{animation:fadeBottomLeft .5s ease .8s forwards;opacity: 0;}
+.scence_shouji .huati_box .fangtan{animation:fadeTopRight .5s ease .9s forwards;opacity: 0;}
+.scence_shouji .huati_box .imgteml{animation:fadeTopRight .5s ease 1s forwards;opacity: 0;}
+
+
+/*fangtan*/
+.fangtan{background: #27a8b4;}
+.fangtan_box .fangtan_bg{margin:-170px 0 0 -350px;width:1920px;height:1080px;background: url(../images/fangtan/fangtan_bg.jpg);}
+.fangtan_box .fangtan_txt{width:303px;height:250px;left:5px;top:111px;background: url(../images/fangtan/fangtan_txt.png) ;}
+.fangtan_box .layer1{width:623px;height:421px;left:467px;top:-42px;background: url(../images/fangtan/layer1.png);}  
+.fangtan_box .layer2{width:634px;height:455px;left:446px;top:84px;background: url(../images/fangtan/layer2.png);}
+.fangtan_box .layer3{width:910px;height:516px;left:253px;top:181px;background: url(../images/fangtan/layer3.png);}
+.fangtan_box .huatong{width:121px;height:133px;left:1039px;top:252px;background: url(../images/fangtan/huatong.png);transform-origin:left bottom;}
+.fangtan_box .ask{width:108px;height:68px;left:347px;top:339px;background: url(../images/fangtan/ask.png);}
+.fangtan_box .answer{width:108px;height:68px;left:904px;top:551px;background: url(../images/fangtan/answer.png);}
+.scence_shouji .fangtan_box .fangtan_bg{animation:fadeIn .5s ease .6s forwards;opacity: 0;}
+.scence_shouji .fangtan_box .fangtan_txt{animation:fadeInLeft .5s ease .6s forwards;opacity: 0;}
+.scence_shouji .fangtan_box .layer1{animation:fadeInTopSmall .2s ease 1.2s forwards;opacity: 0;}
+.scence_shouji .fangtan_box .layer2{animation:fadeInTopSmall .2s ease 0.9s forwards;opacity: 0;}
+.scence_shouji .fangtan_box .layer3{animation:fadeInRight .2s ease .6s forwards;opacity: 0;}
+.scence_shouji .fangtan_box .ask{animation:fadeBottomLeft .5s ease 0.9s forwards;opacity: 0;}
+.scence_shouji .fangtan_box .answer{animation:fadeBottomRight .5s ease 1.3s forwards;opacity: 0;}
+.scence_shouji .fangtan_box .huatong{animation:fadeInRight .5s ease .6s forwards,huatong_rotate 1s ease 2s infinite alternate;opacity: 0;}
+
+
+/*xiaohuoban*/
+.xiaohuoban{background: #6ea6ff;}
+.xiaohuoban_box .xiaohuoban_bg{margin:-170px 0 0 -350px;width:1920px;height:1080px;background: url(../images/xiaohuoban/xiaohuoban_bg.jpg);}
+.xiaohuoban_box .cake{width:1283px;height:346px;left:-43px;top:237px;background: url(../images/xiaohuoban/cake.png);}
+.xiaohuoban_box .xiaohuoban_txt{width:395px;height:207px;left:15px;top:80px;background: url(../images/xiaohuoban/xiaohuoban_txt.png) no-repeat;}
+.xiaohuoban_box .girl{width:192px;height:248px;left:490px;top:214px;background: url(../images/xiaohuoban/girl.png);}
+.xiaohuoban_box .shan{width:289px;height:150px;left:838px;top:262px;background: url(../images/xiaohuoban/shan.png);}
+.xiaohuoban_box .xiaohuoban_2015{width:272px;height:100px;left:904px;top:60px;background: url(../images/xiaohuoban/xiaohuoban_2015.png);}
+.xiaohuoban_box .xiaolang{width:352px;height:396px;left:600px;top:124px;background: url(../images/xiaohuoban/xiaolang.png);}
+.xiaohuoban_box .zhangpeng{width:310px;height:144px;left:170px;top:310px;background: url(../images/xiaohuoban/zhangpeng.png);}
+.scence_zhoubian .xiaohuoban_box .cake{animation:fadeInTop 0.2s cubic-bezier(0.42, 0, 0.6, 2.4) .6s forwards;opacity: 0;}
+.scence_zhoubian .xiaohuoban_box .xiaohuoban_txt{animation:fadeInLeft .5s ease .6s forwards;opacity: 0;}
+.scence_zhoubian .xiaohuoban_box .shan{animation:fadeInTop .2s ease 1.1s forwards;opacity: 0;}
+.scence_zhoubian .xiaohuoban_box .zhangpeng{animation:fadeInTop .5s ease 1.1s forwards;opacity: 0;}
+.scence_zhoubian .xiaohuoban_box .girl{animation:fadeInLeft .5s ease 1.4s forwards;opacity: 0;}
+.scence_zhoubian .xiaohuoban_box .xiaolang{animation:fadeInRight .5s ease 1.4s forwards;opacity: 0;}
+.scence_zhoubian .xiaohuoban_box .xiaohuoban_2015{animation:fadeInScale .5s ease 2s forwards;opacity: 0;}
+
+/*yingxiangli*/
+.yingxiangli{background: #010103;}
+.yingxiangli_box .yingxiangli_bg{margin:-170px 0 0 -350px;width:1920px;height:1080px;background: url(../images/yingxiangli/yingxiangli_bg.jpg);}
+.yingxiangli_box .title_bg{width:1534px;height:687px;left:-54px;top:-99px;background: url(../images/yingxiangli/title_bg.png);}
+.yingxiangli_box .title_bg a{    
+    display: block;
+    width: 640px;
+    height: 340px;
+    top: 340px;
+    position: absolute;
+    left: 363px;
+    transform: skew(-16deg);
+	cursor: pointer;}
+.yingxiangli_box .big_v{width:726px;height:664px;left:-148px;top:-69px;background: url(../images/yingxiangli/big_v.png) ;clip-path: url(#svgPath);-webkit-clip-path: url(#svgPath);
+    overflow: hidden;}
+.yingxiangli_box .big_v .light{width: 23px;height: 712px;background: url(../images/yingxiangli/light.png);}
+.scence_zhoubian .yingxiangli_box .title_bg{animation:fadeInRight .5s ease .6s forwards;opacity: 0;}
+.scence_zhoubian .yingxiangli_box .big_v{animation:fadeInLeft .5s ease .6s forwards;opacity: 0;}
+.scence_zhoubian .yingxiangli_box .light{animation:light_move 5s ease 2s forwards infinite;opacity: 0;}
+
+
+
+/*yangguang*/
+.yangguang{background: #0fe2e9;}
+.yangguang_box .yangguang_bg{margin:-170px 0 0 -350px;width:1920px;height:1080px;background: url(../images/yangguang/yangguang_bg.jpg);}
+.yangguang_box .yangguang_txt{width:861px;height:84px;left:166px;top:580px;background: url(../images/yangguang/yangguang_txt.png);}
+.yangguang_box .watch{width:639px;height:539px;left:304px;top:127px;background: url(../images/yangguang/watch.png)}
+.yangguang_box .watch_point_hidden{width:600px;height:362px;left: 316px;top: 116px;overflow: hidden;}
+.yangguang_box .watch_point{width:600px;height:600px;transform-origin: 50% 50%;top:-14px;background: url(../images/yangguang/watch_point.png);transition: all .5s ease-in;}
+.yangguang_box .num_bar{width: 200px;height: 100px;top: 333px;left: 545px;}
+.nj_pic .yangguang_box .num_bar span{display: inline-block;position:static;width: 45px;height: 67px;background: url(../images/yangguang/num_bar.png);}
+.yangguang_box .num_bar span:nth-child(1){background-position: 0 -750px;opacity: 0;}
+.yangguang_box .num_bar span:nth-child(2){background-position: 0 0;opacity: 0;}
+.yangguang_box .num_bar span:nth-child(3){background-position: 0 -965px;opacity: 0;}
+.yangguang_box .txt_tip{top: 417px;left: 560px;color: #136d99;font-size: 27px}
+.scence_pinpai .yangguang_box .yangguang_bg{animation:fadeInScale .2s ease .6s forwards;opacity: 0;}
+.scence_pinpai .yangguang_box .watch{animation:fadeInTop .5s ease .6s forwards;opacity: 0;}
+.scence_pinpai .yangguang_box .yangguang_txt{animation:fadeInBottom .5s ease .6s forwards;opacity: 0;}
+.scence_pinpai .yangguang_box .watch_point{animation:point_end 1.5s ease-in 1.5s forwards;transform: rotate(-207deg);opacity: 0;}
+.scence_pinpai .yangguang_box .num_bar span:nth-child(1){animation:num_trans1 1s ease 1s forwards;}
+.scence_pinpai .yangguang_box .num_bar span:nth-child(2){animation:num_trans2 1.5s ease 1s forwards}
+.scence_pinpai .yangguang_box .num_bar span:nth-child(3){animation:num_trans3 2s ease 1s forwards}
+.scence_pinpai .yangguang_box .txt_tip{animation:fadeInScale .5s cubic-bezier(0.25, 0.1, 0.53, 1.51) 3s forwards;opacity: 0;}
+/*发现找人*/
+.zhaoren{background: #0f1927;}
+.zhaoren_box .zhaoren_bg{margin:-170px 0 0 -350px;width:1920px;height:1080px;background: url(../images/zhaoren/zhaoren_bg.jpg);}
+.zhaoren_box .zhaoren_txt{width:440px;height:385px;left:-46px;top:71px;background: url(../images/zhaoren/zhaoren_txt.png);}
+.zhaoren_box .mac{width:861px;height:716px;left:454px;top:-21px;background: url(../images/zhaoren/mac.png)}
+.zhaoren_box .desk{width:1486px;height:138px;left: -85px;top: 611px;background: url(../images/zhaoren/desk.png)}
+.zhaoren_box .zhaoren_float{width:604px;height:428px;left:423px;top:64px;background: url(../images/zhaoren/float.png);}
+.scence_pinpai .zhaoren_box .zhaoren_bg{animation:fadeIn .5s ease .5s forwards;opacity: 0;}
+.scence_pinpai .zhaoren_box .zhaoren_txt{animation:fadeInLeft .5s ease .6s forwards;opacity: 0;}
+.scence_pinpai .zhaoren_box .mac{animation:fadeInRight .3s ease 1s forwards;opacity: 0;}
+.scence_pinpai .zhaoren_box .desk{animation:fadeInBottomWide .3s ease 1s forwards;opacity: 0;}
+.scence_pinpai .zhaoren_box .zhaoren_float{animation:fadeBottomRight .5s ease 1.5s forwards;opacity: 0;}
+/*认证*/
+.renzheng{background: #fc5945;}
+.renzheng_box .renzheng_bg{margin:-240px 0 0 -350px;width:1920px;height:1080px;background: url(../images/renzheng/renzheng_bg.png);}
+.renzheng_box .renzheng_txt{width:320px;height:249px;left:0;top:71px;background: url(../images/renzheng/renzheng_txt.png);}
+.renzheng_box .medal{width:288px;height:187px;left:940px;top:438px;background: url(../images/renzheng/medal.png)}
+.renzheng_box .card_big{width:810px;height:636px;left: 530px;top: -16px;background: url(../images/renzheng/card_big.png)}
+.renzheng_box .card_small{width:189px;height:312px;left:527px;top:272px;background: url(../images/renzheng/card_small.png);}
+.renzheng_box .icons{width:317px;height:106px;left:0;top:342px;background: url(../images/renzheng/icons.png);}
+ 
+.scence_pinpai .renzheng_box .renzheng_bg{animation:fadeIn .5s ease .5s forwards;opacity: 0;}
+.scence_pinpai .renzheng_box .renzheng_txt{animation:fadeInLeft .5s ease .6s forwards;opacity: 0;}
+.scence_pinpai .renzheng_box .medal{animation:fadeTopRight .3s ease 1.2s forwards;opacity: 0;}
+.scence_pinpai .renzheng_box .card_big{animation:fadeTopRight .3s ease 1s forwards;opacity: 0;}
+.scence_pinpai .renzheng_box .card_small{animation:fadeTopRight .3s ease 0.8s forwards;opacity: 0;}
+.scence_pinpai .renzheng_box .icons{animation:fadeIn .5s ease .6s forwards;opacity: 0;}
+
+/*热点*/
+.redian{background: #3780ef;}
+.redian_box .redian_bg{margin:-220px 0 0 -350px;width:1920px;height:1080px;background: url(../images/redian/redian_bg.jpg);}
+.redian_box .redian_txt{width:315px;height:290px;left:0;top:40px;background: url(../images/redian/redian_txt.png);}
+.redian_box .block_left{width:738px;height:608px;left:356px;top:30px;background: url(../images/redian/block_left.png)}
+.redian_box .block_right{width:450px;height:339px;left: 762px;top:44px;background: url(../images/redian/block_right.png)}
+.redian_box .bottom_txt{width:880px;height:611px;left:232px;top:65px;background: url(../images/redian/bottom_txt.png);}
+.redian_box .heart{width:264px;height:167px;left:492px;top:44px;background: url(../images/redian/heart.png);}
+.redian_box .yun1{width:823px;height:403px;left:320px;top:192px;background: url(../images/redian/yun1.png);}
+.redian_box .yun2{width:351px;height:295px;left:360px;top:222px;background: url(../images/redian/yun2.png);}
+.redian_box .zidan{left:969px;top:86px;}
+.redian_box .zidan1{margin: 51px 0 0 30px ;width:194px;height:171px;background: url(../images/redian/zidan1.png);}
+.redian_box .zidan2{width:253px;height:219px;background: url(../images/redian/zidan2.png);}
+
+
+.scence_yunying1 .redian_box .redian_bg{animation:fadeIn .5s ease .5s forwards;opacity: 0;}
+.scence_yunying1 .redian_box .redian_txt{animation:fadeInLeft .5s ease .6s forwards;opacity: 0;}
+.scence_yunying1 .redian_box .block_left{animation:fadeTopLeft .3s ease 1.2s forwards;opacity: 0;}
+.scence_yunying1 .redian_box .block_right{animation:fadeBottomRight .3s ease 1.2s forwards;opacity: 0;}
+.scence_yunying1 .redian_box .bottom_txt{animation:fadeIn .5s ease 1.5s forwards;opacity: 0;}
+.scence_yunying1 .redian_box .heart{animation:fadeInScale .3s cubic-bezier(0.25, 0.1, 0.55, 1.73) 2s forwards;opacity: 0;}
+.scence_yunying1 .redian_box .yun1{animation:yun_move 15s linear 0s forwards infinite;opacity: 0;}
+.scence_yunying1 .redian_box .yun2{animation:yun_move 20s linear 0.2s forwards infinite;opacity: 0;}
+.scence_yunying1 .redian_box .zidan1{animation:fadeInScale .5s ease-in 2.5s forwards;opacity: 0;}
+.scence_yunying1 .redian_box .zidan2{animation:fadeInScale .5s ease-in 2.8s forwards;opacity: 0;}
+
+.scence_yunying1
+
+@keyframes rightIn{
+	0%{transform:translate(0,0);opacity: 0;}
+	100%{transform:translate(-44px,29px);opacity: 1;}
+}
+
+@keyframes light_move{
+	0%{transform:translate(0,0);opacity: 0.5;}
+	100%{transform:translate(726px,0);opacity: 1;}
+}
+@keyframes point_end{
+	0%{transform: rotate(-207deg);opacity: 1;}
+	100%{transform: rotate(0);opacity: 1;}
+}
+@keyframes num_trans1{
+	0%{background-position: 0 -10000px;opacity: 1;}
+	100%{background-position: 0 -750px;opacity: 1;}
+}
+@keyframes num_trans2{
+	0%{background-position: 0 1000px;opacity: 1;}
+	100%{background-position: 0 0;opacity: 1;}
+}
+@keyframes num_trans3{
+	0%{background-position: 0 1000px;opacity: 1;}
+	100%{background-position: 0 -965px;opacity: 1;}
+}
+@keyframes yun_move{
+	0%{opacity: 0;transform:translate(-800px,0);}
+	50%{opacity: 1;transform:translate(0,0);}
+	100%{opacity: 0;transform:translate(500px,0);}
+}
+/*====================================================================================================*/
+@keyframes pop{
+	0%{transform:translate(0,0);}
+	100%{transform:translate(0,10px);}
+}
+
+@keyframes huatong_rotate{
+	0%{transform:rotate(0);}
+	20%{transform:rotate(-10deg)}
+	40%{transform:rotate(10deg);}
+	50%{transform:rotate(0);}
+}
+
+
+
+
+
